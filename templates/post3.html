@@ -3,19 +3,21 @@
 <head>
   <title>Shrill Patel</title>
 
+  {% load static %}
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="default.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
 
 </head>
 <body>
   <div class="nav-wrapper">
 
-    <a href="index.html">
+    <a href="home.html">
       <div class="dots-wrapper">
         <div id="dot-1" class="browser-dot"></div>
         <div id="dot-2" class="browser-dot"></div>
@@ -24,7 +26,7 @@
     </a>
 
     <ul id="navigation">
-      <li><a href="index.html#contact">Back</a></li>
+      <li><a href="{% url 'home' %}">Back</a></li>
     </ul>
   </div>
 
@@ -56,7 +58,7 @@
 
 		<h5>The Algorithm In Action</h5>
 		<div class="img-container">
-			<img src="images/pic.png">
+			<img src="{% static 'images/pic.png' %}">
 		</div>
 
     <br>
