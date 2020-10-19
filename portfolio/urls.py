@@ -19,8 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home)
-    path('astar/', views.astar)
-    path('mindspace/', views.mindspace)
-    path('passwordvault', views.passvault)
+    path('', views.home, name='home'),
+    path('astar/', views.astar, name='astar'),
+    path('mindspace/', views.mindspace, name='mindspace'),
+    path('passwordvault/', views.passvault, name='passvault')
 ]
