@@ -20,4 +20,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home)
+    path('astar/', views.astar)
+    path('mindspace/', views.mindspace)
+    path('passwordvault', views.passvault)
 ]
