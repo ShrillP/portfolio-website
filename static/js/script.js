@@ -27,10 +27,10 @@ function setTheme(mode){
     document.getElementById('theme-style').href = "css/blue.css"
   }
   if(mode == 'green'){
-    document.getElementById('theme-style').href = "static 'css/green.css"
+    document.getElementById('theme-style').href = "css/green.css"
   }
   if(mode == 'purple'){
-    document.getElementById('theme-style').href = "static 'css/purple.css"
+    document.getElementById('theme-style').href = "css/purple.css"
   }
 
   localStorage.setItem('theme', mode)
