@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+import moreInfo.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('astar/', views.astar),
-    path('mindspace/', views.mindspace),
-    path('passwordvault/', views.passvault)
+    path('astar/', moreInfo.views.astar),
+    path('mindspace/', moreInfo.views.mindspace),
+    path('passwordvault/', moreInfo.views.passvault),
 ]
