@@ -12,3 +12,6 @@ def mindspace(request):
 
 def passvault(request):
     return render(request, 'post3.html')
+
+def blue(request):
+    return render(request, 'blue.css')

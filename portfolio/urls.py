@@ -21,6 +21,7 @@ import moreInfo.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('', views.blue),
     path('astar/', moreInfo.views.astar),
     path('mindspace/', moreInfo.views.mindspace),
     path('passwordvault/', moreInfo.views.passvault),

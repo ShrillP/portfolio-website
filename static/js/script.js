@@ -21,10 +21,10 @@ for (var i = 0; themeDots.length > i; i++){
 
 function setTheme(mode){
   if(mode == 'light'){
-    document.getElementById('theme-style').src = "css/default.css"
+    document.getElementById('theme-style').href = "default.css"
   }
   if(mode == 'blue'){
-    document.getElementById('theme-style').src = "static/css/blue.css"
+    document.getElementById('theme-style').href = "blue.css"
   }
   if(mode == 'green'){
     document.getElementById('theme-style').href = "css/green.css"
